@@ -1,0 +1,16 @@
+.fundoContato {
+  background-color: white;
+}
+
+body {
+  background-color: white;
+}
+
+  body label {
+    font-weight: unset;
+    font-size: medium;
+  }
+
+  body .formInput {
+    padding-left: 18px;
+  }
