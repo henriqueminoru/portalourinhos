@@ -10,47 +10,17 @@
     <div class="col">
       <h1 class="titulo h1">Portal Ourinhos</h1>
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4" *ngIf="this.anuncio && this.anuncio.length > 0">
+          <div class="col" *ngFor="let item of this.anuncio">
             <div class="card" style="width: 18rem;">
-              <img src="..\..\assets/camiseta preta.jpg" class="card-img-top" alt="...">
+              <img src="..\..\assets/{{item.foto}}" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Texto</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">{{item.nome}}</h5>
+                <p class="card-text" style="min-height:50px">{{item.detalhe}}</p>
+                <a class="btn btn-primary" [routerLink]="['/info-produto']">detalhes</a>
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <br />
-            <img src="..\..\assets/camiseta preta.jpg" class="card-img-top" alt="tabela de informacao">
-          </div>
-          <div class="col">
-            <br />
-            <img src="..\..\assets/camiseta preta.jpg" class="card-img-top" alt="tabela de informacao">
-          </div>
-          <div class="col">
-            <br />
-            <img src="..\..\assets/camiseta preta.jpg" class="card-img-top" alt="tabela de informacao">
-          </div>
-          <br />
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col">
-                <br />
-                <img src="..\..\assets/camiseta preta.jpg" class="card-img-top" alt="tabela de informacao">
-              </div>
-              <div class="col">
-                <br />
-                <img src="..\..\assets/camiseta preta.jpg" class="card-img-top" alt="tabela de informacao">
-              </div>
-              <div class="col">
-                <br />
-                <img src="..\..\assets/camiseta preta.jpg" class="card-img-top" alt="tabela de informacao">
-              </div>
-              <div class="col">
-                <br />
-                <img src="..\..\assets/camiseta preta.jpg" class="card-img-top" alt="tabela de informacao">
+              <div class="card-footer">
+                R$230,00
               </div>
             </div>
           </div>
@@ -59,3 +29,4 @@
     </div>
   </div>
 </div>
+
