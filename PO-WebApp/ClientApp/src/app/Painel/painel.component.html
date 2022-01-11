@@ -6,21 +6,25 @@
   </nav>
 </div>
 <h1>
-  Painel Cliente
+ Painel Cliente
 </h1>
 <div>
   <form>
     <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email:</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text"></div>
+      <div class="col-3 align-self-center">
+        <label for="exampleInputEmail1" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text"></div>
+      </div>
     </div>
-
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Senha:</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+      <div class="col-3 align-self-center">
+        <label for="exampleInputPassword1" class="form-label">Senha:</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <a class="nav-link text-dark" [routerLink]="['/esqueci minha senha']">Esqueci minha senha.</a>
+      <button type="submit" class="btn btn-primary">Logar</button>
     </div>
-    <a class="nav-link text-dark" [routerLink]="['/esqueci minha senha']">Esqueci minha senha.</a>
-    <button type="submit" class="btn btn-primary">Logar</button>
   </form>
 </div>
+
