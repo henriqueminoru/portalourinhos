@@ -6,26 +6,27 @@
   </nav>
 </div>
 <div class="container">
-  <div class="row titulo">
-    <div class="col">
-      <h1 class="titulo h1">Portal Ourinhos</h1>
-      <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4" *ngIf="this.anuncio && this.anuncio.length > 0">
-          <div class="col" *ngFor="let item of this.anuncio">
-            <div class="card" style="width: 18rem;">
-              <img src="..\..\assets/{{item.foto}}" class="card-img-top" alt="...">
+ 
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5" *ngIf="this.anuncio && this.anuncio.length > 0">
+          <div class="col mb-3" *ngFor="let item of this.anuncio">
+            <div class="card" style="width: 13rem;">
+              <div class="card-header text-center">
+                <img src="..\..\assets/{{item.logo}}" class="card-img-top" style="max-height: auto; max-width: 40px"  alt="{{item.empresa}}">
+              </div>
               <div class="card-body">
-                <h5 class="card-title">{{item.nome}}</h5>
-                <p class="card-text" style="min-height:50px">{{item.detalhe}}</p>
-                <a class="btn btn-primary" [routerLink]="['/info-produto']">detalhes</a>
+                <img src="..\..\assets/{{item.foto}}" class="card-img-top text-center" style="max-height: auto; max-width: 150px" alt="...">
               </div>
-              <div class="card-footer">
-                R$230,00
+                <div class="card-body">
+                  <h5 class="card-title" style="min-height:45px">{{item.nome}}</h5>
+                  <p class="card-text" style="min-height:50px">{{item.detalhe}}</p>
+                </div>
+                <div class="card-footer">
+                  R$230,00
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            
+     
+
     </div>
   </div>
 </div>
