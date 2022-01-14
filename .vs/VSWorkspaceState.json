@@ -7,9 +7,10 @@
     "\\PO-WebApp\\ClientApp\\src\\app",
     "\\PO-WebApp\\ClientApp\\src\\app\\anuncio",
     "\\PO-WebApp\\ClientApp\\src\\app\\anuncio\\model",
+    "\\PO-WebApp\\ClientApp\\src\\app\\footer",
     "\\PO-WebApp\\ClientApp\\src\\app\\home",
-    "\\PO-WebApp\\ClientApp\\src\\assets"
+    "\\PO-WebApp\\ClientApp\\src\\assets",
+    "\\PO-WebApp\\ClientApp\\src\\environments"
   ],
-  "SelectedNode": "\\PO-WebApp\\ClientApp\\src\\app\\home\\home.component.ts",
   "PreviewInSolutionExplorer": false
 }
