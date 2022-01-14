@@ -12,6 +12,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { ContatoComponent } from './contato/contato.component';
 import { FooterComponent } from './footer/footer.component';
 import { PainelComponent } from './painel/painel.component';
+import { PainelHomeComponent } from './Painel/painel-home/painel-home.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,9 @@ import { PainelComponent } from './painel/painel.component';
     { path: 'counter', component: CounterComponent },
     { path: 'fetch-data', component: FetchDataComponent },
     { path: 'contato', component: ContatoComponent },
-    { path: 'painel', component: PainelComponent },
+      { path: 'painel', component: PainelComponent },
+      { path: 'painel-home', component: PainelHomeComponent },
+    //{ path: 'painel-home', loadChildren: () => import('./tabela-preco/tabela-preco.module').then(m => m.TabelaPrecoModule)}
 ], { relativeLinkResolution: 'legacy' })
   ],
   providers: [],
