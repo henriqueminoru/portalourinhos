@@ -20,7 +20,15 @@
       <label for="exampleInputPassword1" class="form-label">Senha:</label>
       <input type="password" class="form-control" id="exampleInputPassword1">
     </div>
-    <a class="nav-link text-dark" [routerLink]="['/esqueci minha senha']">Esqueci minha senha.</a>
-    <button type="submit" class="btn btn-primary">Logar</button>
+    <div class="row">
+      <div class="col-4">
+        <a class="nav-link text-dark" [routerLink]="['/esqueci minha senha']">Esqueci minha senha.</a>
+      </div>
+      <div class="col-2">
+        <a [routerLink]="['../painel-home']" class="btn btn-primary" style="float: right; margin-right: 70px; width: 139px; height: 50px;">
+          <div style="position:relative;top:50%;transform:translateY(-50%);">LOGAR</div>
+        </a>
+      </div>
+    </div>
   </form>
 </div>
