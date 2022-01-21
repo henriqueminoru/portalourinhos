@@ -5,12 +5,12 @@
     "\\PO-WebApp\\ClientApp",
     "\\PO-WebApp\\ClientApp\\src",
     "\\PO-WebApp\\ClientApp\\src\\app",
-    "\\PO-WebApp\\ClientApp\\src\\app\\anuncio",
-    "\\PO-WebApp\\ClientApp\\src\\app\\anuncio\\model",
-    "\\PO-WebApp\\ClientApp\\src\\app\\footer",
-    "\\PO-WebApp\\ClientApp\\src\\app\\home",
-    "\\PO-WebApp\\ClientApp\\src\\assets",
-    "\\PO-WebApp\\ClientApp\\src\\environments"
+    "\\PO-WebApp\\ClientApp\\src\\app\\Painel",
+    "\\PO-WebApp\\ClientApp\\src\\app\\Painel\\painel-anuncio",
+    "\\PO-WebApp\\ClientApp\\src\\app\\Painel\\painel-anuncio\\anuncio-consulta",
+    "\\PO-WebApp\\ClientApp\\src\\app\\Painel\\painel-anuncio\\anuncio-crud",
+    "\\PO-WebApp\\ClientApp\\src\\app\\Painel\\painel-home"
   ],
+  "SelectedNode": "\\PO-WebApp\\ClientApp\\src\\app\\Painel\\painel-anuncio\\anuncio-crud\\anuncio-crud.component.html",
   "PreviewInSolutionExplorer": false
 }

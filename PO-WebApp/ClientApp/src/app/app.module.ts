@@ -13,6 +13,8 @@ import { ContatoComponent } from './contato/contato.component';
 import { FooterComponent } from './footer/footer.component';
 import { PainelComponent } from './painel/painel.component';
 import { PainelHomeComponent } from './Painel/painel-home/painel-home.component';
+import { AnuncioConsultaComponent } from './Painel/painel-anuncio/anuncio-consulta/anuncio-consulta.component';
+import { AnuncioCrudComponent } from './Painel/painel-anuncio/anuncio-crud/anuncio-crud.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,9 @@ import { PainelHomeComponent } from './Painel/painel-home/painel-home.component'
     ContatoComponent,
     FooterComponent,
     PainelComponent,
+    PainelHomeComponent,
+    AnuncioConsultaComponent,
+    AnuncioCrudComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -37,6 +42,8 @@ import { PainelHomeComponent } from './Painel/painel-home/painel-home.component'
     { path: 'contato', component: ContatoComponent },
       { path: 'painel', component: PainelComponent },
       { path: 'painel-home', component: PainelHomeComponent },
+      { path: 'anuncio-consulta', component: AnuncioConsultaComponent },
+      { path: 'anuncio-crud', component: AnuncioCrudComponent },
     //{ path: 'painel-home', loadChildren: () => import('./tabela-preco/tabela-preco.module').then(m => m.TabelaPrecoModule)}
 ], { relativeLinkResolution: 'legacy' })
   ],
